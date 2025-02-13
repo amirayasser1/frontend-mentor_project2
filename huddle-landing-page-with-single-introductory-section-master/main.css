@@ -1,0 +1,78 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; 
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    background-image: url('images/bg-desktop.svg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "logo logo"
+        "photo content";
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.logo {
+    grid-area: logo;
+    width: 180px;
+    margin-bottom: 3rem;
+}
+
+.photo {
+    grid-area: photo;
+    width: 100%;
+    height: auto;
+}
+
+section {
+    grid-area: content;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+button {
+    border-radius: 24px;
+    width: 145px;
+    height: 43px;
+    color: hsl(257, 40%, 49%);
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
