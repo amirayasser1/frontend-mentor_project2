@@ -74,5 +74,119 @@ button:hover {
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding-right : 70px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    
+}
+
+.social-icons a {
+    color: white; 
+    font-size: 26px; 
+    text-decoration: none; 
+}
+
+.social-icons a:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+/* Tablet breakpoint */
+@media screen and (max-width: 768px) {
+    .page {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "photo"
+            "content";
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    section {
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 140px;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    footer {
+        padding-right: 0;
+    }
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url('images/bg-mobile.svg');
+        background-size: contain;
+    }
+
+    .page {
+        padding: 1.5rem;
+    }
+
+    .logo {
+        width: 120px;
+        margin-bottom: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    button {
+        width: 200px;
+        height: 35px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icons a {
+        font-size: 15px;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 320px) {
+    .page {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    button {
+        width: 180px;
+    }
 }
