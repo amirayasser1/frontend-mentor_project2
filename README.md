@@ -2,7 +2,7 @@
 
 This is my solution to the Frontend Mentor Huddle landing page challenge. It's a responsive landing page that adapts beautifully across all device sizes while maintaining visual harmony and accessibility.
 
-![Huddle Landing Page Preview](./design/desktop-preview.jpg)
+![Huddle Landing Page Preview](desktop.png)
 
 ##  Overview
 
